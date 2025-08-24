@@ -30,39 +30,28 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-## real bills 
-student_loans = 200
-phone_bill = 150 
-car_insurance = 150 
-gas = 60
-
-## my maintenance 
-manicure = 80
-pedicure = 50
-gym = 15
-music = 11
-wax = 70
+## make a function to list each of the expenses and their amounts 
 
 def list_my_expenses(my_expenses):
     for category, amount in my_expenses:
-          st.markdown(
-              """
-              <div style="
-                  border: 2px solid pink;
-                  padding: 10px;
-                  border-radius: 10px;
-                  background-color: #fff5f7;
-                  font-size:18px;
-                  display: flex;
-                  justify-content: space-between;
-                  ">
-                 <span>{category}</span>
-                 <span>${amount}</span>
-              </div>
-              """,
-              unsafe_allow_html=True
-          )
+        st.markdown(
+            f"""
+            <div style="
+                border: 2px solid pink;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #fff5f7;
+                font-size:18px;
+                display: flex;
+                justify-content: space-between;
+                ">
+               <span>{category}</span>
+               <span>${amount}</span>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
 
 ## Now create my expenses so we can use them in the function
 
