@@ -83,3 +83,25 @@ my_expenses = [
                ("Wax", 75), ] 
 
 list_my_expenses(my_expenses)
+
+# Sum all amounts
+total_expenses = sum(amount for category, amount in my_expenses)
+
+st.markdown(
+    f"""
+    <div style="
+        border: 2px solid pink;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #ffb6c1;
+        font-size:20px;
+        font-weight:bold;
+        display: flex;
+        justify-content: space-between;
+        ">
+        <span>Total Expenses</span>
+        <span>${total_expenses}</span>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
