@@ -21,12 +21,15 @@ st.markdown(
         padding: 15px;
         border-radius: 10px;
         background-color: #ffe6f0;
+        font-size: 24px;   /* increase font size */
+        font-weight: bold; /* make text bold */
         ">
         💖 My Expenses:
     </div>
     """,
     unsafe_allow_html=True
 )
+
 
 ## real bills 
 student_loans = 200
