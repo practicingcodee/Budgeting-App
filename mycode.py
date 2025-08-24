@@ -44,24 +44,25 @@ gym = 15
 music = 11
 wax = 70
 
-def list_my_expenses(list):
-  st.markdown(
-      """
-      <div style="
-          border: 2px solid pink;
-          padding: 10px;
-          border-radius: 10px;
-          background-color: #fff5f7;
-          font-size:18px;
-          display: flex;
-          justify-content: space-between;
-          ">
-         <span>{category}</span>
-         <span>${amount}</span>
-      </div>
-      """,
-      unsafe_allow_html=True
-  )
+def list_my_expenses(my_expenses):
+    for category, amount in my_expenses:
+          st.markdown(
+              """
+              <div style="
+                  border: 2px solid pink;
+                  padding: 10px;
+                  border-radius: 10px;
+                  background-color: #fff5f7;
+                  font-size:18px;
+                  display: flex;
+                  justify-content: space-between;
+                  ">
+                 <span>{category}</span>
+                 <span>${amount}</span>
+              </div>
+              """,
+              unsafe_allow_html=True
+          )
 
 ## Now create my expenses so we can use them in the function
 
