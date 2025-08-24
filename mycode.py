@@ -14,7 +14,7 @@ st.title("Balance Your Budget")
 st.markdown("*Where Preparation Meets Opportunity*")
 
 ##My expenses
-st.header(
+st.markdown(
     """
     <div style="
         border: 2px solid pink;
