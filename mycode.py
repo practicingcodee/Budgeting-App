@@ -9,6 +9,20 @@ import seaborn as sns
 import plotly.figure_factory as ff
 import plotly.graph_objs as go 
 
+## background 
+
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #ffe6f0;  /* light pink background */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 ##title of the app
 st.title("Balance Your Budget")
 st.markdown("*Where Preparation Meets Opportunity*")
