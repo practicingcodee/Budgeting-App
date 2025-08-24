@@ -56,8 +56,8 @@ def list_my_expenses(list):
           display: flex;
           justify-content: space-between;
           ">
-          <span>Nails</span>
-          <span>$70</span>
+         <span>{category}</span>
+         <span>${amount}</span>
       </div>
       """,
       unsafe_allow_html=True
