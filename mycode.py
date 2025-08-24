@@ -153,7 +153,7 @@ def list_my_income(my_income):
                 display: flex;
                 justify-content: space-between;
                 ">
-               <span>{inccome}</span>
+               <span>{income}</span>
                <span>${income_amount}</span>
             </div>
             """,
