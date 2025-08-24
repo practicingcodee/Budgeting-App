@@ -25,7 +25,13 @@ st.markdown(
 
 
 ##title of the app
-st.title("Balance Your Budget")
+st.markdown(
+    """
+    <h1 style='color:#ffb6c1;'>Balance Your Budget</h1>
+    """,
+    unsafe_allow_html=True
+)
+
 st.markdown("*Where Preparation Meets Opportunity*")
 
 ##My expenses
