@@ -55,14 +55,16 @@ def list_my_expenses(my_expenses):
 
 ## Now create my expenses so we can use them in the function
 
-my_expenses = [ ("Nails", 70), 
-               ("Toes", 50), 
+my_expenses = [
                ("Student Loans", 200), 
                ("Phone Bill", 150), 
                ("Car Insurance", 150), 
                ("Gas", 60), 
-               ("Gym", 15), 
+    
+               ("Nails", 70), 
+               ("Toes", 50), 
                ("Music", 15), 
+               ("Gym", 15), 
                ("Wax", 15), ] 
 
 list_my_expenses(my_expenses)
