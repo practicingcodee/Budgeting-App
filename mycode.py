@@ -54,7 +54,7 @@ def list_my_expenses(my_expenses):
             <div style="
                 border: 2px solid pink;
                 padding: 10px;
-                border-radius: 10px;
+                border-radius: 8px;
                 background-color: #fff5f7;
                 font-size:18px;
                 display: flex;
