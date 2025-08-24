@@ -9,7 +9,7 @@ import seaborn as sns
 import plotly.figure_factory as ff
 import plotly.graph_objs as go 
 
-## background 
+#################################################### BACKGROUND COLOR
 
 st.markdown(
     """
@@ -24,7 +24,8 @@ st.markdown(
 )
 
 
-##title of the app
+#################################################### TITLE
+
 st.markdown(
     """
     <h1 style='color:#ffb6c1;'>Balance Your Budget</h1>
@@ -34,7 +35,9 @@ st.markdown(
 
 st.markdown("*Where Preparation Meets Opportunity*")
 
-##My expenses
+#################################################### LIST MY EXPENSES
+
+
 st.markdown(
     """
     <div style="
@@ -112,12 +115,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+
+
+####################################################### INCOME
+
 # Add space between sections
 st.markdown("<br><br>", unsafe_allow_html=True)
 
-############# INCOME
-
-##My expenses
+##My income
 st.markdown(
     """
     <div style="
@@ -160,9 +165,8 @@ def list_my_income(my_income):
             unsafe_allow_html=True
         )
 
-
-
-
+## list income
+list_my_income(my_income)
 
 
 
