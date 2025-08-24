@@ -14,8 +14,9 @@ import plotly.graph_objs as go
 st.markdown(
     """
     <style>
-    body {
-        background-color: #ffe6f1;  /* light pink background */
+    /* Background for the main page */
+    section[data-testid="stApp"] {
+        background-color: #ffe6f0;
     }
     </style>
     """,
