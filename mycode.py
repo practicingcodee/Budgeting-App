@@ -179,7 +179,10 @@ maintenance = ["Nails", "Toes", "Wax", "Gym", "Music"]
 # Calculate totals
 total_bills = sum(amount for category, amount in my_expenses if category in bills)
 total_maintenance = sum(amount for category, amount in my_expenses if category in maintenance)
-total_fun_money = sum(income - total_bills - total_maintenance)
+income_amount = my_income[0][1]  # get 1600
+total_fun_money = income_amount - total_bills - total_maintenance
+
+
 
 # Display table
 st.markdown(
