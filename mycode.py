@@ -112,6 +112,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Add space between sections
+st.markdown("<br><br>", unsafe_allow_html=True)
 
 ############# INCOME
 
