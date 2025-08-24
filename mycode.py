@@ -21,7 +21,7 @@ st.markdown(
         padding: 15px;
         border-radius: 10px;
         background-color: #ffe6f0;
-        font-size: 24px;   /* increase font size */
+        font-size: 20px;   
         font-weight: bold; /* make text bold */
         ">
         💖 My Expenses:
@@ -50,7 +50,7 @@ st.markdown(
         border: 2px solid pink;
         padding: 10px;
         border-radius: 10px;
-        background-color: #ffe6f0;
+        background-color: #ffeef8;
         font-size:18px;
         display: flex;
         justify-content: space-between;
