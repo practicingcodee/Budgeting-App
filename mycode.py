@@ -63,8 +63,8 @@ my_expenses = [
     
                ("Nails", 70), 
                ("Toes", 50), 
-               ("Music", 15), 
+               ("Music", 11), 
                ("Gym", 15), 
-               ("Wax", 15), ] 
+               ("Wax", 75), ] 
 
 list_my_expenses(my_expenses)
