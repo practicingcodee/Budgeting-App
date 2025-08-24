@@ -13,48 +13,66 @@ import plotly.graph_objs as go
 st.title("Balance Your Budget")
 st.markdown("*Where Preparation Meets Opportunity*")
 
-## make a function that has a header "My Expenses" in a box and all my listed expenses below it in rows 
-
-def show_expense_box(expenses, title="💖 My Expenses:"):
-  
-    # Start the main container div
-    html = f"""
+##My expenses
+st.markdown(
+    """
     <div style="
         border: 2px solid pink;
         padding: 15px;
         border-radius: 10px;
-        background-color: #fff5f7;
-        font-size:18px;
-    ">
-        <div style="font-weight:bold; margin-bottom:10px;">{title}</div>
-    """
+        background-color: #ffe6f0;
+        font-size: 20px;   
+        font-weight: bold; /* make text bold */
+        ">
+        💖 My Expenses:
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-    # Add each expense as a flex row
-    for category, amount in expenses:
-        html += f"""
-        <div style="display: flex; justify-content: space-between; margin-bottom:5px;">
-            <span>{category}</span>
-            <span style="font-weight:bold;">${amount}</span>
-        </div>
-        """
 
-    # Close the main div
-    html += "</div>"
+## real bills 
+student_loans = 200
+phone_bill = 150 
+car_insurance = 150 
+gas = 60
 
-    st.markdown(html, unsafe_allow_html=True)
+## my maintenance 
+manicure = 80
+pedicure = 50
+gym = 15
+music = 11
+wax = 70
 
-## Now create my expenses so we can use them in the function 
+def list_my_expenses(list):
+  st.markdown(
+      """
+      <div style="
+          border: 2px solid pink;
+          padding: 10px;
+          border-radius: 10px;
+          background-color: #fff5f7;
+          font-size:18px;
+          display: flex;
+          justify-content: space-between;
+          ">
+          <span>Nails</span>
+          <span>$70</span>
+      </div>
+      """,
+      unsafe_allow_html=True
+  )
 
-my_expenses = [
-    ("Nails", 70),
-    ("Toes", 50),
-    ("Student Loans", 200),
-    ("Phone Bill", 150),
-    ("Car Insurance", 150),
-    ("Gas", 60),
-    ("Gym", 15),
-    ("Music", 15),
-    ("Wax", 15),
-]
+## Now create my expenses so we can use them in the function
 
-show_expense_box(my_expenses)
+my_expenses = [ ("Nails", 70), 
+               ("Toes", 50), 
+               ("Student Loans", 200), 
+               ("Phone Bill", 150), 
+               ("Car Insurance", 150), 
+               ("Gas", 60), 
+               ("Gym", 15), 
+               ("Music", 15), 
+               ("Wax", 15), ] 
+
+list_my_expenses(my_expenses)
