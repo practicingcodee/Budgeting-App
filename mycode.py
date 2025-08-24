@@ -113,17 +113,71 @@ st.markdown(
 )
 
 
+############# INCOME
+
+##My expenses
+st.markdown(
+    """
+    <div style="
+        border: 2px solid pink;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #ffe6f0;
+        font-size: 20px;   
+        font-weight: bold; /* make text bold */
+        ">
+        💖 My Income:
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+## make a function to list income
+
+my_income = [
+               ("Income", 1600)
+
+
+def list_my_income(my_income):
+    for income, income_amount in my_income:
+        st.markdown(
+            f"""
+            <div style="
+                border: 2px solid pink;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #fff5f7;
+                font-size:18px;
+                display: flex;
+                justify-content: space-between;
+                ">
+               <span>{inccome}</span>
+               <span>${income_amount}</span>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+
+
+
+
+
+
+
+
+
+
 ## Break it down
 
 # Define categories
 bills = ["Student Loans", "Phone Bill", "Car Insurance", "Gas"]
-maintenance = ["Nails", "Toes", "Wax"]
-fun_money = ["Music", "Gym"]
+maintenance = ["Nails", "Toes", "Wax", "Gym", "Music"]
 
 # Calculate totals
 total_bills = sum(amount for category, amount in my_expenses if category in bills)
 total_maintenance = sum(amount for category, amount in my_expenses if category in maintenance)
-total_fun_money = sum(amount for category, amount in my_expenses if category in fun_money)
+total_fun_money = sum(income - total_bills - total_maintenance)
 
 # Display table
 st.markdown(
