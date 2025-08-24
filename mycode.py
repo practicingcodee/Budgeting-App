@@ -135,7 +135,7 @@ st.markdown(
 ## make a function to list income
 
 my_income = [
-               ("Income", 1600)
+               ("Income", 1600) ]
 
 
 def list_my_income(my_income):
