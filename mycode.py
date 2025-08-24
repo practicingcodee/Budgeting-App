@@ -111,3 +111,35 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+
+## Break it down
+
+# Define categories
+bills = ["Student Loans", "Phone Bill", "Car Insurance", "Gas"]
+maintenance = ["Nails", "Toes", "Wax"]
+fun_money = ["Music", "Gym"]
+
+# Calculate totals
+total_bills = sum(amount for category, amount in my_expenses if category in bills)
+total_maintenance = sum(amount for category, amount in my_expenses if category in maintenance)
+total_fun_money = sum(amount for category, amount in my_expenses if category in fun_money)
+
+# Display table
+st.markdown(
+    f"""
+    <table style="border: 2px solid pink; border-collapse: collapse; width: 60%; text-align:center;">
+        <tr style="background-color:#ffe6f0;">
+            <th style="border: 1px solid pink; padding: 8px;">Bills</th>
+            <th style="border: 1px solid pink; padding: 8px;">Maintenance</th>
+            <th style="border: 1px solid pink; padding: 8px;">Fun Money</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid pink; padding: 8px;">${total_bills}</td>
+            <td style="border: 1px solid pink; padding: 8px;">${total_maintenance}</td>
+            <td style="border: 1px solid pink; padding: 8px;">${total_fun_money}</td>
+        </tr>
+    </table>
+    """,
+    unsafe_allow_html=True
+)
