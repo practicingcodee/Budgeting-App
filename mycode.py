@@ -53,8 +53,8 @@ def list_my_expenses(my_expenses):
             f"""
             <div style="
                 border: 2px solid pink;
-                padding: 10px;
-                border-radius: 8px;
+                padding: 5px;
+                border-radius: 10px;
                 background-color: #fff5f7;
                 font-size:18px;
                 display: flex;
