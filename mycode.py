@@ -91,10 +91,10 @@ st.markdown(
     f"""
     <div style="
         border: 2px solid pink;
-        padding: 15px;
+        padding: 5px;
         border-radius: 10px;
         background-color: #ffb6c1;
-        font-size:20px;
+        font-size:18px;
         font-weight:bold;
         display: flex;
         justify-content: space-between;
